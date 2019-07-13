@@ -1,8 +1,10 @@
-var http = require("http");
-var express = require("express");
-var app = express();
+require("dotenv").config();
 
-app.use(express.static("./public"));
+var http = require("http");
+var database = require("./config/database");
+const app = require("./config/express");
+
+database(process.env.MONGODB_URI);
 
 http.createServer(app).listen(3000, function() {
   console.log("Servidor iniciado na porta 3000");
