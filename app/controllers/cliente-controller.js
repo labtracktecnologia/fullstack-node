@@ -2,7 +2,7 @@ const cliente = require("../models/cliente");
 
 class ClienteController {
   async findAll(req, res) {
-    const registros = cliente.findAll();
+    const registros = await cliente.find();
     return res.status(200).json(registros);
   }
 

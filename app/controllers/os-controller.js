@@ -2,7 +2,7 @@ const os = require("../models/os");
 
 class OSController {
   async findAll(req, res) {
-    const registros = os.findAll();
+    const registros = await os.find();
     return res.status(200).json(registros);
   }
 
