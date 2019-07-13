@@ -2,7 +2,7 @@ const item = require("../models/item");
 
 class ItemController {
   async findAll(req, res) {
-    const registros = item.findAll();
+    const registros = await item.findAll();
     return res.status(200).json(registros);
   }
 
