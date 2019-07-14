@@ -18,10 +18,6 @@ $ npm install
 $ npm start
 ```
 
-- git clone https://github.com/labtrackensino/fullstack-node
-- npm install
-- npm start
-
 ### Desenvolvedor
 
 https://github.com/dogezilli/
