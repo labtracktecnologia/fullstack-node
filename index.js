@@ -6,6 +6,8 @@ const app = require("./config/express");
 
 database(process.env.MONGODB_URI);
 
-http.createServer(app).listen(3000, function() {
+const port = process.env.PORT || 3000;
+
+http.createServer(app).listen(port, function() {
   console.log("Servidor iniciado na porta 3000");
 });
