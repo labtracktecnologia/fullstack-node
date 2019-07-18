@@ -7,7 +7,7 @@ class ItemController {
   }
 
   async findById(req, res) {
-    const registro = await item.findById(req, params.id);
+    const registro = await item.findById(req.params.id);
     if (registro) {
       return res.json(registro);
     } else {

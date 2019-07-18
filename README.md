@@ -9,7 +9,11 @@ Repositório com projeto MEAN Stack (MongoDB, Express, AngularJS e NodeJS) para 
 ### Instalação
 
 O projeto requer [Node.js](https://nodejs.org/) instalado na sua máquina.
+<<<<<<< HEAD
 Rode os seguintes comandos no seu terminal para rodar o projeto.
+=======
+Execute os seguintes comandos no seu terminal para rodar o projeto.
+>>>>>>> bd8a100fa904698e84d57c2f29460f7271b6770e
 
 ```sh
 $ git clone https://github.com/labtrackensino/fullstack-node
@@ -18,10 +22,13 @@ $ npm install
 $ npm start
 ```
 
+<<<<<<< HEAD
 - git clone https://github.com/labtrackensino/fullstack-node
 - npm install
 - npm start
 
+=======
+>>>>>>> bd8a100fa904698e84d57c2f29460f7271b6770e
 ### Desenvolvedor
 
 https://github.com/dogezilli/

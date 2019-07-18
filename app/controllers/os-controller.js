@@ -7,7 +7,7 @@ class OSController {
   }
 
   async findById(req, res) {
-    const registro = await os.findById(req, params.id);
+    const registro = await os.findById(req.params.id);
     if (registro) {
       return res.json(registro);
     } else {

@@ -7,7 +7,7 @@ class ClienteController {
   }
 
   async findById(req, res) {
-    const registro = await cliente.findById(req, params.id);
+    const registro = await cliente.findById(req.params.id);
     if (registro) {
       return res.json(registro);
     } else {
