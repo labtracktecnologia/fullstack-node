@@ -11,14 +11,11 @@ class LoginController {
     if (conta) {
       const isValid = bcrypt.compareSync(password, conta.senha);
       if (isValid) {
-        console.log("Login efetuado com sucesso.");
         return res.json("Login efetuado com sucesso.");
       } else {
-        console.log("Senha incorreta.");
         return res.json("Senha incorreta.");
       }
     } else {
-      console.log("Usuário não encontrado.");
       return res.json("Usuário não encontrado.");
     }
   }
