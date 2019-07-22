@@ -1,4 +1,5 @@
 const os = require("../models/os");
+const cliente = require("../models/cliente");
 
 class OSController {
   async findAll(req, res) {
@@ -13,6 +14,12 @@ class OSController {
     } else {
       return res.status(404).send("Not found");
     }
+  }
+
+  async findByCliente(req, res) {
+    var regex = new RegExp("" + req.query.pesquisa + ".*$", "i");
+    const registros = await os.find({ "cliente.nome": regex });
+    return res.json(registros);
   }
 
   async store(req, res) {
